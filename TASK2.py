@@ -89,7 +89,7 @@ with open('results2/results_2.json', 'w') as f:
     f.write("\"data\": [\n")
     for i,j,k in zip(flist1, lam, epr):
         f.write( "\t  \"freq\": {:<20.5f} \"lambda\": {:<12.5f} \"rcs\": {:<12.12f}\n".format(i,j,k))
-
+    f.write("]")
 
 plt.plot(flist, epr)
 plt.show()
